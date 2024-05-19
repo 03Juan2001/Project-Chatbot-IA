@@ -14,7 +14,7 @@ export default function Login (props) {
     try{
       await signInWithEmailAndPassword(auth, email, password)
       Alert.alert('Iniciando sesion', 'Accediendo...')
-      props.navigation.navigate('Home')
+      props.navigation.navigate('ChatScreen')
     }
     catch (error){
       console.log(error);

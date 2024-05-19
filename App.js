@@ -4,12 +4,10 @@ import 'react-native-gesture-handler';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Login from './Screen/Login';
-import Home from './Screen/Home';
-
-
+import ChatScreen from './Screen/ChatScreen';
 
 export default function App() {
-  const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 function MyStack(){
     return(
       <Stack.Navigator>
@@ -22,7 +20,7 @@ function MyStack(){
           headerTitleAlign:'center',
           headerStyle: { backgroundColor: "#075eec"}
         }}/>
-        <Stack.Screen name='Home' component={Home}options={{
+        <Stack.Screen name='ChatScreen' component={ChatScreen}options={{
           title: <Text style={styles.title}>AstridBot</Text>,
           headerTintColor: "white",
           headerTitleAlign:'center',
